@@ -10,9 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var drinkingCount = CGFloat()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         let myCoolButton = UIButton()
         myCoolButton.setTitle("Hey Click Me if You Dare", for: .normal)
@@ -24,14 +25,12 @@ class ViewController: UIViewController {
     }
     
     func handleOnClickOfMyCoolButton () {
-        print("Hey, I was clicked!")
+        self.drinkingCount += 1
+        print("Hey, I was clicked!", self.drinkingCount)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
 }
 
