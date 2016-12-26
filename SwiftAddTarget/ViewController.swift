@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var drinkingCount = CGFloat()
+    var drinkingCount = Int()
     
     override func viewDidLoad() {
         super.viewDidLoad()
