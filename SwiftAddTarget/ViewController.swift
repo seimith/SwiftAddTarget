@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         let myCoolButton = UIButton()
         myCoolButton.setTitle("Hey Click Me if You Dare", for: .normal)
         myCoolButton.frame = CGRect(x: 100, y: 100, width: 200, height: 100)
-        myCoolButton.backgroundColor = UIColor.cyan
+        myCoolButton.backgroundColor = UIColor.orange
         self.view.addSubview(myCoolButton)
         
         myCoolButton.addTarget(self, action: #selector(self.handleOnClickOfMyCoolButton), for: .touchUpInside)
